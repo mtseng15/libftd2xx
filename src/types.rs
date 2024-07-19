@@ -1683,6 +1683,8 @@ impl_bus_pins!(Eeprom4232h, A, B, C, D);
 impl_tx_data_enable!(Eeprom4232h, A, B, C, D);
 impl_driver_type!(Eeprom4232h, A, B, C, D);
 
+impl_driver_type!(Eeprom2232h, A, B);
+
 // These get around an annoyance with bindgen generating different types for
 // preprocessor macros on Linux vs Windows.
 const NORM_232R_CBUS_TXDEN: u8 = FT_232R_CBUS_TXDEN as u8;
